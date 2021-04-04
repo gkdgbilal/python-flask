@@ -1,9 +1,9 @@
 version: '3'
 
 services:
-    product-service:
-        build: ./product
+    python-flask:
+        build: ./flask
         volumes:
-            - ./product:/usr/src/app
+            - ./flask:/usr/src/app
         ports:
-            - 4444:80
+            - "4444:4444"
